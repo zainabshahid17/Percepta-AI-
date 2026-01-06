@@ -1,0 +1,44 @@
+{
+    "caption_model": {
+        "architecture": "CNN (ResNet50) + LSTM",
+        "test_loss": 2.6034744274139405,
+        "vocab_size": 2988,
+        "trainable_params": 6501036,
+        "model_file": "caption_model_final.pth",
+        "config_file": "caption_model_config.pkl",
+        "vocab_file": "../vocab/vocab.pkl"
+    },
+    "action_model": {
+        "architecture": "ResNet50 (Fine-tuned)",
+        "test_accuracy": 78.57142857142857,
+        "test_loss": 0.6965014625951726,
+        "num_classes": 15,
+        "class_names": [
+            "calling",
+            "clapping",
+            "cycling",
+            "dancing",
+            "drinking",
+            "eating",
+            "fighting",
+            "hugging",
+            "laughing",
+            "listening_to_music",
+            "running",
+            "sitting",
+            "sleeping",
+            "texting",
+            "using_laptop"
+        ],
+        "trainable_params": 24565839,
+        "model_file": "action_model_final.pth",
+        "config_file": "action_model_config.pkl"
+    },
+    "training_info": {
+        "date": "January 2026",
+        "framework": "PyTorch",
+        "device": "Kaggle 2x T4 GPUs",
+        "caption_epochs": 15,
+        "action_epochs": 10
+    }
+}
